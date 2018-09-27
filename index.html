@@ -6,61 +6,49 @@
     <title>UNFinished Business Employment Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand text-white" href="#">UNFinished Business Employment Application</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
+    <!-- End Navbar -->
+    <!-- Start Side Navbar -->
     <div class="container-fluid">
         <div class="row">
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky sticky-top">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#contactInfo" data-uk-smooth-scroll="{offset:64}">
+                            <a class="nav-link text-dark" href="#contactInfo">
                   Contact Information
                 </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#emergencyContact" data-uk-smooth-scroll="{offset:64}">
+                            <a class="nav-link text-dark" href="#emergencyContact">
                   <span data-feather="file"></span>
                   Emergency Contact
                 </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">
+                            <a class="nav-link text-dark" href="#employmentInfo">
                   <span data-feather="shopping-cart"></span>
-                  Products
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">
-                  <span data-feather="users"></span>
-                  Customers
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
+                  Employment Information
                 </a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <!-- End Side Navbar -->
             <div class="col-md-9 ml-sm-auto col-lg-10 ml-3 mb-3 mt-3">
+                <!-- Start Contact Information Section -->
                 <h4 class="mb-3" id="contactInfo">Contact Information</h4>
                 <form class="needs-validation" novalidate>
                     <div class="row">
@@ -182,7 +170,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="state">How long have you lived at your current address?</label>
+                            <label for="yearsLived">How long have you lived at your current address?</label>
                             <select class="custom-select d-block w-100" id="yearsLived" required>
                                 <option value="">Year(s)...</option>
                                 <option value="y0">0</option>
@@ -258,39 +246,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="position">Position Applied For</label>
-                            <input type="text" class="form-control" id="address" placeholder="Position Applied For..." required>
-                            <div class="invalid-feedback">
-                                Position required.
+                        <div class="col-md-6 mb-3 mt-4 pt-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Check if 18 or older. (All employees must be 18 or older)</label>
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
                         <div class="row">
-                            <div class="col-md-6 mb-3 mt-3">
-                                <label for="validationTooltipUsername">Username</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">$</span>
-                                    </div>
-                                    <input type="number" class="form-control" id="validationTooltipUsername" placeholder="50000" required>
-                                    <div class="invalid-tooltip">
-                                        Please inset a vaild salary amount.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3 mt-5 pt-1">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Check if 18 or older. (All employees must be 18 or older)</label>
-                                </div>
-                            </div>
                         </div>
                         <hr class="mb-4">
                 </form>
-                <h4 class="mb-3" id="emergencyContact">Emergency Contact</h4>
+                <!-- End Contact Information Section -->
+                <!-- Start Emergency Contact Section -->
                 <form class="needs-validation" novalidate>
+                    <h4 class="" id="emergencyContact">Emergency Contact <h6 class="text-muted">(Will be contacted in case of an emergency.)</h6></h4>
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label for="lastName">Last name</label>
@@ -428,6 +399,131 @@
                     </div>
                     <hr class="mb-4">
                 </form>
+                <!-- End Emergency Contact Information Section -->
+                <form class="needs-validation" novalidate>
+                    <h4 class="" id="employmentInfo">Employment Information</h4>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationTooltipUsername">Desired Salary</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="validationTooltipUsername" placeholder="50000" required>
+                                <div class="invalid-tooltip">
+                                    Please insert a vaild salary amount.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="position">Position Applied For</label>
+                            <input type="text" class="form-control" id="address" placeholder="Position Applied For..." required>
+                            <div class="invalid-feedback">
+                                Position required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationTooltipSalary">Avaliable Start Date</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fas fa-calendar-alt"></i></span>
+                                </div>
+                                <input type="date" class="form-control" id="validationTooltipSalary" placeholder="50000" required>
+                                <div class="invalid-tooltip">
+                                    Please insert a vaild salary amount.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mt-4 pt-3">
+                            <span class="pr-3">Avaliable to work nights?</span>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftYes" value="option1">
+                                <label class="form-check-label" for="nightShiftYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftNo" value="option2">
+                                <label class="form-check-label" for="nightShiftNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="hoursPerWeek">How many hours a week can you work?</label>
+                            <select class="custom-select d-block w-100" id="hoursPerWeek" required>
+                                <option value="">Choose...</option>
+                                <option value="hoursPerWeek1">0 - 10</option>
+                                <option value="hoursPerWeek2">11 - 20</option>
+                                <option value="hoursPerWeek3">21 - 30</option>
+                                <option value="hoursPerWeek4">31 - 40</option>
+                                <option value="hoursPerWeek5">41 - 50</option>
+                                <option value="hoursPerWeek6">51 - 60</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide amount.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mt-4 pt-3">
+                            <span class="pr-3">Have you ever been fired from a job?</span>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftYes" value="option1">
+                                <label class="form-check-label" for="nightShiftYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftNo" value="option2">
+                                <label class="form-check-label" for="nightShiftNo">No</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <span class="pr-3">What days are you available to work?</span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Sunday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultcheck2" >
+                                <label class="form-check-label" for="defaultcheck2">
+                                    Monday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultcheck3" >
+                                <label class="form-check-label" for="defaultcheck3">
+                                    Tuesday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultcheck4" >
+                                <label class="form-check-label" for="defaultcheck4">
+                                    Wenesday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultcheck5" >
+                                <label class="form-check-label" for="defaultcheck5">
+                                    Thursday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultcheck6" >
+                                <label class="form-check-label" for="defaultcheck6">
+                                    Friday
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultcheck7" >
+                                <label class="form-check-label" for="defaultcheck7">
+                                    Saturday
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                </form>
+                <!-- End Employment Information -->
                 </div>
             </div>
         </div>
@@ -435,7 +531,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/uikit.min.js"></script>
     <script src="js/main.js.min"></script>
 </body>
 
