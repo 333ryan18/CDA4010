@@ -1,857 +1,900 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>UNFinished Business Employment Application</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<!-- Start Navbar -->
-		<nav class="navbar navbar-expand-lg">
-			<a class="navbar-brand text-white" href="#">UNFinished Business Employment Application</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-		</nav>
-		<!-- End Navbar -->
-		<!-- Start Side Navbar -->
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="col-md-2 d-none d-md-block bg-light sidebar">
-					<div class="sidebar-sticky sticky-top">
-						<ul class="nav flex-column">
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#contactInfo">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UNFinished Business Employment Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand text-white" href="#">UNFinished Business Employment Application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Side Navbar -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky sticky-top">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contactInfo">
 									Contact Information
 								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#emergencyContact">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#emergencyContact">
 									<span data-feather="file"></span>
 									Emergency Contact
 								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#employmentInfo">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#employmentInfo">
 									<span data-feather="shopping-cart"></span>
 									Employment Information
 								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#criminalBackground">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#criminalBackground">
 									<span data-feather="shopping-cart"></span>
 									Criminal Background
 								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#references">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#references">
 									<span data-feather="shopping-cart"></span>
 									References
 								</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				<!-- End Side Navbar -->
-				<div class="col-md-9 ml-sm-auto col-lg-10 ml-3 mb-3 mt-3">
-					<!-- Start Contact Information Section -->
-					<h4 class="mb-3" id="contactInfo">Contact Information</h4>
-					<form class="needs-validation" novalidate>
-						<div class="row">
-							<div class="col-md-4 mb-3">
-								<label for="lastName">Last name</label>
-								<input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
-								<div class="invalid-feedback">
-									Valid last name is required.
-								</div>
-							</div>
-							<div class="col-md-4 mb-3">
-								<label for="firstName">First name</label>
-								<input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
-								<div class="invalid-feedback">
-									Valid first name is required.
-								</div>
-							</div>
-							<div class="col-md-4 mb-3">
-								<label for="middleName">Middle name</label>
-								<input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="" required>
-								<div class="invalid-feedback">
-									Valid last name is required.
-								</div>
-							</div>
-						</div>
-						<div class="mb-3">
-							<label for="email">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-							<div class="invalid-feedback">
-								Please enter a valid email address.
-							</div>
-						</div>
-						<div class="mb-3">
-							<label for="address">Address</label>
-							<input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-							<div class="invalid-feedback">
-								Please enter your address.
-							</div>
-						</div>
-						<div class="mb-3">
-							<label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-							<input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-						</div>
-						<div class="row">
-							<div class="col-md-6 mb-3">
-								<label for="state">State</label>
-								<select class="custom-select d-block w-100" id="state" required>
-									<option value="">Choose...</option>
-									<option value="AL">Alabama</option>
-									<option value="AK">Alaska</option>
-									<option value="AZ">Arizona</option>
-									<option value="AR">Arkansas</option>
-									<option value="CA">California</option>
-									<option value="CO">Colorado</option>
-									<option value="CT">Connecticut</option>
-									<option value="DE">Delaware</option>
-									<option value="DC">District Of Columbia</option>
-									<option value="FL">Florida</option>
-									<option value="GA">Georgia</option>
-									<option value="HI">Hawaii</option>
-									<option value="ID">Idaho</option>
-									<option value="IL">Illinois</option>
-									<option value="IN">Indiana</option>
-									<option value="IA">Iowa</option>
-									<option value="KS">Kansas</option>
-									<option value="KY">Kentucky</option>
-									<option value="LA">Louisiana</option>
-									<option value="ME">Maine</option>
-									<option value="MD">Maryland</option>
-									<option value="MA">Massachusetts</option>
-									<option value="MI">Michigan</option>
-									<option value="MN">Minnesota</option>
-									<option value="MS">Mississippi</option>
-									<option value="MO">Missouri</option>
-									<option value="MT">Montana</option>
-									<option value="NE">Nebraska</option>
-									<option value="NV">Nevada</option>
-									<option value="NH">New Hampshire</option>
-									<option value="NJ">New Jersey</option>
-									<option value="NM">New Mexico</option>
-									<option value="NY">New York</option>
-									<option value="NC">North Carolina</option>
-									<option value="ND">North Dakota</option>
-									<option value="OH">Ohio</option>
-									<option value="OK">Oklahoma</option>
-									<option value="OR">Oregon</option>
-									<option value="PA">Pennsylvania</option>
-									<option value="RI">Rhode Island</option>
-									<option value="SC">South Carolina</option>
-									<option value="SD">South Dakota</option>
-									<option value="TN">Tennessee</option>
-									<option value="TX">Texas</option>
-									<option value="UT">Utah</option>
-									<option value="VT">Vermont</option>
-									<option value="VA">Virginia</option>
-									<option value="WA">Washington</option>
-									<option value="WV">West Virginia</option>
-									<option value="WI">Wisconsin</option>
-									<option value="WY">Wyoming</option>
-								</select>
-								<div class="invalid-feedback">
-									Please provide a valid state.
-								</div>
-							</div>
-							<div class="col-md-3 mb-3">
-								<label for="city">City</label>
-								<input type="text" class="form-control" id="zip" placeholder="City" required>
-								<div class="invalid-feedback">
-									City required.
-								</div>
-							</div>
-							<div class="col-md-3 mb-3">
-								<label for="zip">Zip</label>
-								<input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
-								<div class="invalid-feedback">
-									Zip code required.
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 mb-3">
-								<label for="yearsLived">How long have you lived at your current address?</label>
-								<select class="custom-select d-block w-100" id="yearsLived" required>
-									<option value="">Year(s)...</option>
-									<option value="y0">0</option>
-									<option value="y1">1</option>
-									<option value="y2">2</option>
-									<option value="y3">3</option>
-									<option value="y4">4</option>
-									<option value="y5">5</option>
-									<option value="y6">6</option>
-									<option value="y7">7</option>
-									<option value="y8">8</option>
-									<option value="y9">9</option>
-								</select>
-								<div class="invalid-feedback">
-									Please provide a vaild number of year(s).
-								</div>
-							</div>
-							<div class="col-md-3 mb-3 mt-3 pt-3">
-								<select class="custom-select d-block w-100" id="monthsLived" required>
-									<option value="">Month(s)...</option>
-									<option value="m0">0</option>
-									<option value="m1">1</option>
-									<option value="m2">2</option>
-									<option value="m3">3</option>
-									<option value="m4">4</option>
-									<option value="m5">5</option>
-									<option value="m6">6</option>
-									<option value="m7">7</option>
-									<option value="m8">8</option>
-									<option value="m9">9</option>
-									<option value="m10">10</option>
-									<option value="m11">11</option>
-								</select>
-								<div class="invalid-feedback">
-									Please provide a vaild number of month(s).
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 mb-3">
-								<label for="zip">Telephone Number</label>
-								<input type="number" class="form-control" id="phone" placeholder="9041234567" required>
-								<div class="invalid-feedback">
-									Phone number required.
-								</div>
-							</div>
-							<div class="col-md-6 mb-3">
-								<label for="zip">Mobile Number</label>
-								<input type="number" class="form-control" id="mobile" placeholder="9041234567" required>
-								<div class="invalid-feedback">
-									Phone number required.
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<label for="ssn">Social Security Number</label>
-								<div class="row">
-									<div class="col-md-3">
-										<input type="text" id="SSNArea" class="form-control input-group text-center" maxlength="3" placeholder="XXX" required />
-									</div>
-									<div class="col-md-1 pt-1">
-										<span>-</span>
-									</div>
-									<div class="col-md-3">
-										<input type="text" id="SSNArea" class="form-control input-group text-center" maxlength="3" placeholder="XXX" required />
-									</div>
-									<div class="col-md-1 pt-1">
-										<span>-</span>
-									</div>
-									<div class="col-md-3">
-										<input type="text" id="SSNArea" class="form-control input-group text-center" maxlength="3" placeholder="XXX" required />
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 mb-3 mt-4 pt-3">
-								<div class="custom-control custom-checkbox">
-									<input type="checkbox" class="custom-control-input" id="customCheck1" required>
-									<label class="custom-control-label" for="customCheck1">Check if 18 or older. (All employees must be 18 or older)</label>
-								</div>
-							</div>
-						</div>
-						<div class="mb-3">
-							<div class="row">
-							</div>
-							<hr class="mb-4">
-						</form>
-						<!-- End Contact Information Section -->
-						<!-- Start Emergency Contact Section -->
-						<form class="needs-validation" novalidate>
-							<h4 class="" id="emergencyContact">Emergency Contact <h6 class="text-muted">(Will be contacted in case of an emergency.)</h6></h4>
-							<div class="row">
-								<div class="col-md-4 mb-3">
-									<label for="lastName">Last name</label>
-									<input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
-									<div class="invalid-feedback">
-										Valid last name is required.
-									</div>
-								</div>
-								<div class="col-md-4 mb-3">
-									<label for="firstName">First name</label>
-									<input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
-									<div class="invalid-feedback">
-										Valid first name is required.
-									</div>
-								</div>
-								<div class="col-md-4 mb-3">
-									<label for="middleName">Middle name</label>
-									<input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="" required>
-									<div class="invalid-feedback">
-										Valid last name is required.
-									</div>
-								</div>
-							</div>
-							<div class="mb-3">
-								<label for="email">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="person@example.com" required>
-								<div class="invalid-feedback">
-									Please enter a valid email address .
-								</div>
-							</div>
-							<div class="mb-3">
-								<label for="address">Address</label>
-								<input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-								<div class="invalid-feedback">
-									Please enter your address.
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6 mb-3">
-									<label for="state">State</label>
-									<select class="custom-select d-block w-100" id="state" required>
-										<option value="">Choose...</option>
-										<option value="AL">Alabama</option>
-										<option value="AK">Alaska</option>
-										<option value="AZ">Arizona</option>
-										<option value="AR">Arkansas</option>
-										<option value="CA">California</option>
-										<option value="CO">Colorado</option>
-										<option value="CT">Connecticut</option>
-										<option value="DE">Delaware</option>
-										<option value="DC">District Of Columbia</option>
-										<option value="FL">Florida</option>
-										<option value="GA">Georgia</option>
-										<option value="HI">Hawaii</option>
-										<option value="ID">Idaho</option>
-										<option value="IL">Illinois</option>
-										<option value="IN">Indiana</option>
-										<option value="IA">Iowa</option>
-										<option value="KS">Kansas</option>
-										<option value="KY">Kentucky</option>
-										<option value="LA">Louisiana</option>
-										<option value="ME">Maine</option>
-										<option value="MD">Maryland</option>
-										<option value="MA">Massachusetts</option>
-										<option value="MI">Michigan</option>
-										<option value="MN">Minnesota</option>
-										<option value="MS">Mississippi</option>
-										<option value="MO">Missouri</option>
-										<option value="MT">Montana</option>
-										<option value="NE">Nebraska</option>
-										<option value="NV">Nevada</option>
-										<option value="NH">New Hampshire</option>
-										<option value="NJ">New Jersey</option>
-										<option value="NM">New Mexico</option>
-										<option value="NY">New York</option>
-										<option value="NC">North Carolina</option>
-										<option value="ND">North Dakota</option>
-										<option value="OH">Ohio</option>
-										<option value="OK">Oklahoma</option>
-										<option value="OR">Oregon</option>
-										<option value="PA">Pennsylvania</option>
-										<option value="RI">Rhode Island</option>
-										<option value="SC">South Carolina</option>
-										<option value="SD">South Dakota</option>
-										<option value="TN">Tennessee</option>
-										<option value="TX">Texas</option>
-										<option value="UT">Utah</option>
-										<option value="VT">Vermont</option>
-										<option value="VA">Virginia</option>
-										<option value="WA">Washington</option>
-										<option value="WV">West Virginia</option>
-										<option value="WI">Wisconsin</option>
-										<option value="WY">Wyoming</option>
-									</select>
-									<div class="invalid-feedback">
-										Please provide a valid state.
-									</div>
-								</div>
-								<div class="col-md-3 mb-3">
-									<label for="city">City</label>
-									<input type="text" class="form-control" id="zip" placeholder="City" required>
-									<div class="invalid-feedback">
-										City required.
-									</div>
-								</div>
-								<div class="col-md-3 mb-3">
-									<label for="zip">Zip</label>
-									<input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
-									<div class="invalid-feedback">
-										Zip code required.
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6 mb-3">
-									<label for="zip">Telephone Number</label>
-									<input type="text" class="form-control" id="phone" placeholder="9041234567" required>
-									<div class="invalid-feedback">
-										Phone number required.
-									</div>
-								</div>
-								<div class="col-md-6 mb-3">
-									<label for="zip">Mobile Number</label>
-									<input type="text" class="form-control" id="mobile" placeholder="9041234567" required>
-									<div class="invalid-feedback">
-										Phone number required.
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="mb-3 col">
-									<label for="relation">Relation</label>
-									<input type="text" class="form-control" id="relation" placeholder="Relation to Emergency Contact" required>
-									<div class="invalid-feedback">
-										Relation required.
-									</div>
-								</div>
-							</div>
-							<hr class="mb-4">
-						</form>
-						<!-- End Emergency Contact Information Section -->
-						<!-- Start Employment Information Section -->
-						<form class="needs-validation" novalidate>
-							<h4 class="" id="employmentInfo">Employment Information</h4>
-							<div class="row">
-								<div class="col-md-6 mb-3">
-									<label for="validationTooltipUsername">Desired Salary</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text">$</span>
-										</div>
-										<input type="number" class="form-control" id="validationTooltipUsername" placeholder="50000" required>
-										<div class="invalid-feedback">
-											Please insert a vaild salary amount.
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 mb-3">
-									<label for="position">Position Applied For</label>
-									<input type="text" class="form-control" id="address" placeholder="Position Applied For..." required>
-									<div class="invalid-feedback">
-										Position required.
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6 mb-3">
-									<label for="validationTooltipSalary">Avaliable Start Date</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fas fa-calendar-alt"></i></span>
-										</div>
-										<input type="date" class="form-control" id="validationTooltipSalary" placeholder="50000" required>
-										<div class="invalid-feedback">
-											Please select a valid date.
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 mb-3 mt-4 pt-3">
-									<span class="pr-3">Avaliable to work nights?</span>
-									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftYes" value="option1" required>
-										<label class="form-check-label" for="nightShiftYes">Yes</label>
-									</div>
-									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftNo" value="option2">
-										<label class="form-check-label" for="nightShiftNo">No</label>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6 mb-3">
-									<label for="hoursPerWeek">How many hours a week can you work?</label>
-									<input type="number" class="form-control" id="hoursPerWeek" placeholder="40" required>
-									<div class="invalid-feedback">
-										Hours per week required.
-									</div>
-								</div>
-								<div class="col-md-6 mb-3 mt-4 pt-3">
-									<span class="pr-3">Have you ever been fired from a job?</span>
-									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftYes" value="option1">
-										<label class="form-check-label" for="nightShiftYes">Yes</label>
-									</div>
-									<div class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftNo" value="option2">
-										<label class="form-check-label" for="nightShiftNo">No</label>
-									</div>
-								</div>
-								<div class="col-md-6 mb-3">
-									<span class="pr-3" id="workdays">What days are you available to work?</span>
-									<form role="form" data-toggle='validator'>
-										<div class="form-group">
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation2" name="BoXSelect[]" value="Box 1">
-													Sunday
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation2" name="BoXSelect[]" value="Box 2">
-													Monday
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation3" name="BoXSelect[]" value="Box 3">
-													Tuesday
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation4" name="BoXSelect[]" value="Box 4">
-													Wenesday
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation5" name="BoXSelect[]" value="Box 5">
-													Thursday
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation6" name="BoXSelect[]" value="Box 6">
-													Friday
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="test-checkbox" type="checkbox">
-												<label class="form-check-label" for="customControlValidation7" name="BoXSelect[]" value="Box 7">
-													Saturday
-												</label>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-							<hr class="mb-4">
-						</form>
-						<!-- End Employment Information -->
-						<!-- Start Criminal Background Section -->
-						<form class="needs-validation" novalidate>
-							<h4 class="" id="criminalBackground">Criminal Background</h4>
-							<div class="row">
-								<div class="col-md-12 mb-3 mt-4 pt-3">
-									<span class="pr-3">Have you ever been convicted of a crime?</span>
-									<div class="form-check form-check-inline">
-										<input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne"/>
-										<label class="form-check-label" for="criminalYes">Yes</label>
-									</div>
-									<div class="form-check form-check-inline">
-										<input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" checked/>
-										<label class="form-check-label" for="criminalNo">No</label>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="panel-group" id="accordion">
-										<div class="panel panel-default">
-											<div id="collapseOne" class="panel-collapse collapse">
-												<div class="panel-body">
-													<div class="row clearfix">
-														<div class="col-md-12 column">
-															<table class="table table-bordered table-hover" id="tab_logic">
-																<thead>
-																	<tr >
-																		<th class="text-center">
-																			#
-																		</th>
-																		<th class="text-center">
-																			Date
-																		</th>
-																		<th class="text-center">
-																			Misdemeanor/Felony
-																		</th>
-																		<th class="text-center">
-																			Description
-																		</th>
-																		<th class="text-center">
-																			Confinement/Probation/Community Service
-																		</th>
-																		<th class="text-center">
-																			Months/Years
-																		</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr id='criminal0'>
-																		<td>
-																			1
-																		</td>
-																		<td>
-																			<input type="date" name='date0' class="form-control" required/>
-																		</td>
-																		<td>
-																			<select class="custom-select d-block w-100" name='type0' required>
-																				<option value="">Choose...</option>
-																				<option value="Misdemeanor">Misdemeanor</option>
-																				<option value="Felony">Felony</option>
-																			</select>
-																		</td>
-																		<td>
-																			<input type="text" name='description0' placeholder='Description' class="form-control" required/>
-																		</td>
-																		<td>
-																			<select class="custom-select d-block w-100" name='punishment0'required>
-																				<option value="">Choose...</option>
-																				<option value="Confinement">Confinement</option>
-																				<option value="Probation">Probation</option>
-																				<option value="Probation">Community Service</option>
-																			</select>
-																		</td>
-																		<td>
-																			<input type="number" class="form-control" id="Years" placeholder="Year(s)" name="punishmentyrs0" required>
-																			<input type="number" class="form-control" id="Months" placeholder="Month(s)" name="punishmentmth0" required>
-																		</td>
-																	</tr>
-																<tr id='criminal1'></tr>
-															</tbody>
-														</table>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-6"><a id="add_row_criminal" class="float-left btn btn-success text-white">Add Row</a></div>
-													<div class="col-md-6"><a id='delete_row_criminal' class="float-right btn btn-danger text-white">Delete Row</a></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="mb-4">
-					</form>
-					<!-- End Criminal Background Section -->
-					<!-- Start References Section -->
-					<h4 class="" id="references">References <h6 class="text-muted">(Please provide four references other than relatives or previous employers.)</h6></h4>
-					<div class="panel-body">
-						<div class="row clearfix">
-							<div class="col-md-12 column">
-								<table class="table table-bordered table-hover" id="tab_logic_ref">
-									<thead>
-										<tr >
-											<th class="text-center">
-												#
-											</th>
-											<th class="text-center">
-												Name
-											</th>
-											<th class="text-center">
-												Title
-											</th>
-											<th class="text-center">
-												Company
-											</th>
-											<th class="text-center">
-												Address
-											</th>
-											<th class="text-center">
-												Telephone
-											</th>
-											<th class="text-center">
-												Email Address
-											</th>
-										</tr>
-									</thead>
-									<form class="needs-validation" novalidate>
-										<tbody>
-											<tr id='addr_ref0'>
-												<td>
-													1
-												</td>
-												<td>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
-														<div class='invalid-feedback'>
-															Valid first name is required.
-														</div>
-													</div>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
-														<div class='invalid-feedback'>
-															Valid last name is required.
-														</div>
-													</div>
-												</td>
-												<td>
-													<input type='text" name='title0' placeholder='Title' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='company0' placeholder='Company' class='form-control' required />
-												</td>
-												<td>
-													<input type='text' name='address0' placeholder='Address' class='form-control' required />
-												</td>
-												<td>
-													<input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
-													<div class="invalid-feedback">
-														Phone number required.
-													</div>
-												</td>
-												<td>
-													<div class="mb-3">
-														<input type="email" class="form-control" placeholder="person@example.com" name='refEmail0'>
-														<div class="invalid-feedback">
-															Please enter a valid email address.
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr id='addr_ref1'>
-												<td>
-													2
-												</td>
-												<td>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
-														<div class='invalid-feedback'>
-															Valid first name is required.
-														</div>
-													</div>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
-														<div class='invalid-feedback'>
-															Valid last name is required.
-														</div>
-													</div>
-												</td>
-												<td>
-													<input type='text" name='title0' placeholder='Title' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='company0' placeholder='Company' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='address0' placeholder='Address' class='form-control' required/>
-												</td>
-												<td>
-													<input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
-													<div class="invalid-feedback">
-														Phone number required.
-													</div>
-												</td>
-												<td>
-													<div class="mb-3">
-														<input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
-														<div class="invalid-feedback">
-															Please enter a valid email address.
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr id='addr_ref2'>
-												<td>
-													3
-												</td>
-												<td>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
-														<div class='invalid-feedback'>
-															Valid first name is required.
-														</div>
-													</div>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
-														<div class='invalid-feedback'>
-															Valid last name is required.
-														</div>
-													</div>
-												</td>
-												<td>
-													<input type='text" name='title0' placeholder='Title' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='company0' placeholder='Company' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='address0' placeholder='Address' class='form-control' required/>
-												</td>
-												<td>
-													<input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
-													<div class="invalid-feedback">
-														Phone number required.
-													</div>
-												</td>
-												<td>
-													<div class="mb-3">
-														<input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
-														<div class="invalid-feedback">
-															Please enter a valid email address.
-														</div>
-													</div>
-												</td>
-											</tr>
-											<tr id='addr_ref3'>
-												<td>
-													4
-												</td>
-												<td>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
-														<div class='invalid-feedback'>
-															Valid first name is required.
-														</div>
-													</div>
-													<div class="col-xs-6 mb-3">
-														<input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
-														<div class='invalid-feedback'>
-															Valid last name is required.
-														</div>
-													</div>
-												</td>
-												<td>
-													<input type='text" name='title0' placeholder='Title' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='company0' placeholder='Company' class='form-control' required/>
-												</td>
-												<td>
-													<input type='text' name='address0' placeholder='Address' class='form-control' required/>
-												</td>
-												<td>
-													<input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
-													<div class="invalid-feedback">
-														Phone number required.
-													</div>
-												</td>
-												<td>
-													<div class="mb-3">
-														<input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
-														<div class="invalid-feedback">
-															Please enter a valid email address.
-														</div>
-													</div>
-												</td>
-											</tr>
-										<tr id='addr_ref4'></tr>
-									</tbody>
-								</form>
-							</table>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6"><a id="add_row_ref" class="float-left btn btn-success text-white">Add Row</a></div>
-						<div class="col-md-6"><a id='delete_row_ref' class="float-right btn btn-danger text-white">Delete Row</a></div>
-					</div>
-				</div>
-				<button type="submit" class="btn btn-primary left mt-3 float-right" id="checkBtn">Submit</button>
-			</div>
-		</div>
-	</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="js/main-dist.js"></script>
-<script src="js/valid-dist.js"></script>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Side Navbar -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 ml-3 mb-3 mt-3">
+                <!-- Start Contact Information Section -->
+                <h4 class="mb-3" id="contactInfo">Contact Information</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="middleName">Middle name</label>
+                            <input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your address.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="state">State</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">Choose...</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="zip" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                City required.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="yearsLived">How long have you lived at your current address?</label>
+                            <select class="custom-select d-block w-100" id="yearsLived" required>
+                                <option value="">Year(s)...</option>
+                                <option value="y0">0</option>
+                                <option value="y1">1</option>
+                                <option value="y2">2</option>
+                                <option value="y3">3</option>
+                                <option value="y4">4</option>
+                                <option value="y5">5</option>
+                                <option value="y6">6</option>
+                                <option value="y7">7</option>
+                                <option value="y8">8</option>
+                                <option value="y9">9</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a vaild number of year(s).
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 mt-3 pt-3">
+                            <select class="custom-select d-block w-100" id="monthsLived" required>
+                                <option value="">Month(s)...</option>
+                                <option value="m0">0</option>
+                                <option value="m1">1</option>
+                                <option value="m2">2</option>
+                                <option value="m3">3</option>
+                                <option value="m4">4</option>
+                                <option value="m5">5</option>
+                                <option value="m6">6</option>
+                                <option value="m7">7</option>
+                                <option value="m8">8</option>
+                                <option value="m9">9</option>
+                                <option value="m10">10</option>
+                                <option value="m11">11</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a vaild number of month(s).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="zip">Telephone Number</label>
+                            <input type="number" class="form-control" id="phone" placeholder="9041234567" required>
+                            <div class="invalid-feedback">
+                                Phone number required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="zip">Mobile Number</label>
+                            <input type="number" class="form-control" id="mobile" placeholder="9041234567" required>
+                            <div class="invalid-feedback">
+                                Phone number required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="ssn">Social Security Number</label>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input type="text" id="SSNArea" class="form-control input-group text-center" maxlength="3" placeholder="XXX" required />
+                                </div>
+                                <div class="col-md-1 pt-1">
+                                    <span>-</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" id="SSNArea" class="form-control input-group text-center" maxlength="3" placeholder="XXX" required />
+                                </div>
+                                <div class="col-md-1 pt-1">
+                                    <span>-</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" id="SSNArea" class="form-control input-group text-center" maxlength="3" placeholder="XXX" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mt-4 pt-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                                <label class="custom-control-label" for="customCheck1">Check if 18 or older. (All employees must be 18 or older)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row">
+                        </div>
+                        <hr class="mb-4">
+                </form>
+                <!-- End Contact Information Section -->
+                <!-- Start Emergency Contact Section -->
+                <form class="needs-validation" novalidate>
+                    <h4 class="" id="emergencyContact">Emergency Contact <h6 class="text-muted">(Will be contacted in case of an emergency.)</h6></h4>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="middleName">Middle name</label>
+                            <input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="person@example.com" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address .
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your address.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="state">State</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">Choose...</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="zip" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                City required.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="zip">Telephone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="9041234567" required>
+                            <div class="invalid-feedback">
+                                Phone number required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="zip">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="9041234567" required>
+                            <div class="invalid-feedback">
+                                Phone number required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="relation">Relation</label>
+                            <input type="text" class="form-control" id="relation" placeholder="Relation to Emergency Contact" required>
+                            <div class="invalid-feedback">
+                                Relation required.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                </form>
+                <!-- End Emergency Contact Information Section -->
+                <!-- Start Employment Information Section -->
+                <form class="needs-validation" novalidate>
+                    <h4 class="" id="employmentInfo">Employment Information</h4>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationTooltipUsername">Desired Salary</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="number" class="form-control" id="validationTooltipUsername" placeholder="50000" required>
+                                <div class="invalid-feedback">
+                                    Please insert a vaild salary amount.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="position">Position Applied For</label>
+                            <input type="text" class="form-control" id="address" placeholder="Position Applied For..." required>
+                            <div class="invalid-feedback">
+                                Position required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationTooltipSalary">Avaliable Start Date</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="fas fa-calendar-alt"></i></span>
+                                </div>
+                                <input type="date" class="form-control" id="validationTooltipSalary" placeholder="50000" required>
+                                <div class="invalid-feedback">
+                                    Please select a valid date.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mt-4 pt-3">
+                            <span class="pr-3">Avaliable to work nights?</span>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftYes" value="option1" required>
+                                <label class="form-check-label" for="nightShiftYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftNo" value="option2">
+                                <label class="form-check-label" for="nightShiftNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="hoursPerWeek">How many hours a week can you work?</label>
+                            <input type="number" class="form-control" id="hoursPerWeek" placeholder="40" required>
+                            <div class="invalid-feedback">
+                                Hours per week required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mt-4 pt-3">
+                            <span class="pr-3">Have you ever been fired from a job?</span>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftYes" value="option1">
+                                <label class="form-check-label" for="nightShiftYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nightShiftNo" value="option2">
+                                <label class="form-check-label" for="nightShiftNo">No</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <span class="pr-3" id="workdays">What days are you available to work?</span>
+                            <form role="form" data-toggle='validator'>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation2" name="BoXSelect[]" value="Box 1">
+                                            Sunday
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation2" name="BoXSelect[]" value="Box 2">
+                                            Monday
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation3" name="BoXSelect[]" value="Box 3">
+                                            Tuesday
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation4" name="BoXSelect[]" value="Box 4">
+                                            Wenesday
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation5" name="BoXSelect[]" value="Box 5">
+                                            Thursday
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation6" name="BoXSelect[]" value="Box 6">
+                                            Friday
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="test-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="customControlValidation7" name="BoXSelect[]" value="Box 7">
+                                            Saturday
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                </form>
+                <!-- End Employment Information -->
+                <!-- Start Criminal Background Section -->
+                <form class="needs-validation" novalidate>
+                    <h4 class="" id="criminalBackground">Criminal Background</h4>
+                    <div class="row">
+                        <div class="col-md-12 mb-3 mt-4 pt-3">
+                            <span class="pr-3">Have you ever been convicted of a crime?</span>
+                            <div class="form-check form-check-inline">
+                                <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" />
+                                <label class="form-check-label" for="criminalYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" checked />
+                                <label class="form-check-label" for="criminalNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div id="collapseOne" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="row clearfix">
+                                                <div class="col-md-12 column">
+                                                    <table class="table table-bordered table-hover" id="tab_logic">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-center">
+                                                                    #
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Date
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Misdemeanor/Felony
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Description
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Confinement/Probation/Community Service
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Months/Years
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr id='criminal0'>
+                                                                <td>
+                                                                    1
+                                                                </td>
+                                                                <td>
+                                                                    <input type="date" name='date0' class="form-control" required />
+                                                                </td>
+                                                                <td>
+                                                                    <select class="custom-select d-block w-100" name='type0' required>
+                                                                        <option value="">Choose...</option>
+                                                                        <option value="Misdemeanor">Misdemeanor</option>
+                                                                        <option value="Felony">Felony</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="text" name='description0' placeholder='Description' class="form-control" required />
+                                                                </td>
+                                                                <td>
+                                                                    <select class="custom-select d-block w-100" name='punishment0' required>
+                                                                        <option value="">Choose...</option>
+                                                                        <option value="Confinement">Confinement</option>
+                                                                        <option value="Probation">Probation</option>
+                                                                        <option value="Probation">Community Service</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <input type="number" class="form-control" id="Years" placeholder="Year(s)" name="punishmentyrs0" required>
+                                                                    <input type="number" class="form-control" id="Months" placeholder="Month(s)" name="punishmentmth0" required>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id='criminal1'></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6"><a id="add_row_criminal" class="float-left btn btn-success text-white">Add Row</a></div>
+                                                <div class="col-md-6"><a id='delete_row_criminal' class="float-right btn btn-danger text-white">Delete Row</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                </form>
+                <!-- End Criminal Background Section -->
+                <!-- Start References Section -->
+                <h4 class="" id="references">References <h6 class="text-muted">(Please provide four references other than relatives or previous employers.)</h6></h4>
+                <div class="panel-body">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <table class="table table-bordered table-hover" id="tab_logic_ref">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            #
+                                        </th>
+                                        <th class="text-center">
+                                            Name
+                                        </th>
+                                        <th class="text-center">
+                                            Title
+                                        </th>
+                                        <th class="text-center">
+                                            Company
+                                        </th>
+                                        <th class="text-center">
+                                            Address
+                                        </th>
+                                        <th class="text-center">
+                                            Telephone
+                                        </th>
+                                        <th class="text-center">
+                                            Email Address
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <form class="needs-validation" novalidate>
+                                    <tbody>
+                                        <tr id='addr_ref0'>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid first name is required.
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid last name is required.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
+                                                <div class="invalid-feedback">
+                                                    Phone number required.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" placeholder="person@example.com" name='refEmail0'>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a valid email address.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr_ref1'>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid first name is required.
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid last name is required.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
+                                                <div class="invalid-feedback">
+                                                    Phone number required.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a valid email address.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr_ref2'>
+                                            <td>
+                                                3
+                                            </td>
+                                            <td>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid first name is required.
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid last name is required.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
+                                                <div class="invalid-feedback">
+                                                    Phone number required.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a valid email address.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr_ref3'>
+                                            <td>
+                                                4
+                                            </td>
+                                            <td>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='firstName0' placeholder='First Name' name='refFirst0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid first name is required.
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 mb-3">
+                                                    <input type='text' class='form-control' id='lastName0' placeholder='Last Name' name='refLast0' required>
+                                                    <div class='invalid-feedback'>
+                                                        Valid last name is required.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                            </td>
+                                            <td>
+                                                <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
+                                                <div class="invalid-feedback">
+                                                    Phone number required.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a valid email address.
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr_ref4'></tr>
+                                    </tbody>
+                                </form>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"><a id="add_row_ref" class="float-left btn btn-success text-white">Add Row</a></div>
+                        <div class="col-md-6"><a id='delete_row_ref' class="float-right btn btn-danger text-white">Delete Row</a></div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Start Mis Background Section -->
+                <form class="needs-validation" novalidate>
+                    <h4 class="" id="criminalBackground">Miscellaneous</h4>
+                    <div class="row">
+                        <div class="col-md-12 mb-3 mt-4 pt-3">
+                            <span class="pr-3">Do you have a driver's license?</span>
+                            <div class="form-check form-check-inline">
+                                <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" />
+                                <label class="form-check-label" for="licenseYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input name="collapseGroup" type="radio" data-toggle="collapse" data-target="#collapseOne" checked />
+                                <label class="form-check-label" for="licenseNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div id="collapseOne" class="panel-collapse collapse">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="position">Driver's License Number</label>
+                                                <input type="text" class="form-control" id="address" placeholder="D123456837890" required>
+                                                <div class="invalid-feedback">
+                                                    Driver's License Number required.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <hr class="mb-4">
+            </form>
+            <!-- End Criminal Background Section -->
+            <button type="submit" class="btn btn-primary left mt-3 float-right" id="checkBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main-dist.js"></script>
+    <script src="js/valid-dist.js"></script>
 </body>
+
 </html>
