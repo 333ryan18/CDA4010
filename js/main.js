@@ -49,41 +49,85 @@ $(document).ready(function() {
 
 });
 
-$(".target").change(function() {
+$("#text_color").change(function() {
     var color = $(this).val();
     switch (color) {
         case 'Default':
-            $("body, .edit, input").addClass("text-dark").removeClass("blue red green yellow");
-            // $('form').find("input[type=text], input[type=password], textarea, input[type=date]").each(function(ev) {
-            //     if (!$(this).val()) {
-            //         $(this).addClass("text-dark").removeClass("blue red green yellow");
-            //     }
-            // });
+            $("body, .edit, input, .custom-select").addClass("text-dark").removeClass("blue red green yellow white");
             break;
         case 'Blue':
-            $("body, .edit, input").addClass("blue").removeClass("text-dark red green yellow");
-            // $('form').find("input[type=text], input[type=password], textarea, input[type=date]").each(function(ev) {
-            //     if (!$(this).val()) {
-            //         $(this).addClass("blue").removeClass("text-dark red green yellow");
-            //     }
-            // });
+            $("body, .edit, input, .custom-select").addClass("blue").removeClass("text-dark red green yellow white");
             break;
         case 'Green':
-            $("body, .edit, input").addClass("green").removeClass("blue red text-dark yellow");
+            $("body, .edit, input, .custom-select").addClass("green").removeClass("blue red text-dark yellow white");
             break;
         case 'Red':
-            $("body, .edit, input").addClass("red").removeClass("blue text-dark green yellow");
+            $("body, .edit, input, .custom-select").addClass("red").removeClass("blue text-dark green yellow white");
             break;
         case 'Yellow':
-            $("body, .edit, input").addClass("yellow").removeClass("blue red green text-dark");
+            $("body, .edit, input, .custom-select").addClass("yellow").removeClass("blue red green text-dark white");
+            break;
+        case 'White':
+            $("body, .edit, input, .custom-select").addClass("white").removeClass("blue red green text-dark yellow");
             break;
         default:
-            $("body, .edit, input").addClass("text-dark").removeClass("blue red green yellow");
+            $("body, .edit, input, .custom-select").addClass("text-dark").removeClass("blue red green yellow white");
     }
-    //outputs "jQuery Wins!"
 });
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+
+$("#background_color").change(function() {
+    var color = $(this).val();
+    switch (color) {
+        case 'Default':
+            $("body, .container-fluid, .modal-content").removeClass("blue_background red_background green_background yellow_background black_background");
+            $(".sidebar").removeClass("blue_background red_background green_background yellow_background black_background").addClass("bg-light");
+            break;
+        case 'Blue':
+            $("body, .container-fluid, .sidebar, .modal-content").addClass("blue_background").removeClass("red_background green_background yellow_background black_background bg-light");
+            break;
+        case 'Green':
+            $("body, .container-fluid, .sidebar, .modal-content").addClass("green_background").removeClass("blue_background red_background yellow_background black_backgroundbg-light");
+            break;
+        case 'Red':
+            $("body, .container-fluid, .sidebar, .modal-content").addClass("red_background").removeClass("blue_background green_background yellow_background black_background bg-light");
+            break;
+        case 'Yellow':
+            $("body, .container-fluid, .sidebar, .modal-content").addClass("yellow_background").removeClass("blue_background red_background green_background black_backgroundbg-light");
+            break;
+        case 'Black':
+            $("body, .container-fluid, .sidebar, .modal-content").addClass("black_background").removeClass("blue_background red_background green_background yellow_backgroundbg-light");
+            break;
+        default:
+            $("body, .container-fluid, .modal-content").removeClass("blue_background red_background green_background yellow_background black_background");
+            $(".sidebar").removeClass("blue_background red_background green_background yellow_background black_background").addClass("bg-light");
+    }
+});
+
+$("#font_size").change(function() {
+    var size = $(this).val();
+    switch (size) {
+        case 'Default':
+            $("*, label").removeClass("x-small small medium large x-large");
+            break;
+        case 'Extra Small':
+            $("*, label").addClass("x-small").removeClass("small medium large x-large");
+            break;
+        case 'Small':
+            $("*, label").addClass("small").removeClass("x-small medium large x-large");
+            break;
+        case 'Medium':
+            $("*, label").addClass("medium").removeClass("x-small large x-large");
+            break;
+        case 'Large':
+            $("*, label").addClass("large").removeClass("x-small small medium x-large");
+            break;
+        default:
+            $("*, label").removeClass("x-small small medium large x-large");
+    }
+});
+
+
 (function() {
     'use strict';
     window.addEventListener('load', function() {

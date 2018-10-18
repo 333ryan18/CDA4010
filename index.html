@@ -92,14 +92,38 @@
                         <div class="modal-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <label for="state">Text Color</label>
-                                        <select class="custom-select d-block w-100 target" id="state" required>
+                                    <div class="col-lg-6">
+                                        <label for="text_color">Text Color</label>
+                                        <select class="custom-select d-block w-100" id="text_color" required>
                                             <option value="Default">Default</option>
                                             <option value="Blue">Blue</option>
                                             <option value="Red">Red</option>
                                             <option value="Green">Green</option>
                                             <option value="Yellow">Yellow</option>
+                                            <option value="White">White</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="background_color">Background Color</label>
+                                        <select class="custom-select d-block w-100" id="background_color" required>
+                                            <option value="Default">Default</option>
+                                            <option value="Blue">Blue</option>
+                                            <option value="Red">Red</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Black">Black</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 mt-3">
+                                    <div class="col-lg-6">
+                                        <label for="font_size">Text Size</label>
+                                        <select class="custom-select d-block w-100" id="font_size" required>
+                                            <option value="Default">Default</option>
+                                            <option value="Extra Small">Extra Small</option>
+                                            <option value="Small">Small</option>
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
                                         </select>
                                     </div>
                                 </div>
@@ -153,7 +177,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                        <label for="address2">Address 2 <span class="font-weight-light">(Optional)</span></label>
                         <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                     </div>
                     <div class="row">
@@ -325,7 +349,7 @@
                 <!-- End Contact Information Section -->
                 <!-- Start Emergency Contact Section -->
                 <form class="needs-validation" novalidate>
-                    <h4 class="" id="emergencyContact">Emergency Contact <h6 class="text-muted">(Will be contacted in case of an emergency.)</h6></h4>
+                    <h4 class="" id="emergencyContact">Emergency Contact <h6 class="font-weight-light">(Will be contacted in case of an emergency.)</h6></h4>
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label for="lastName">Last name</label>
@@ -685,7 +709,7 @@
                 </form>
                 <!-- End Criminal Background Section -->
                 <!-- Start References Section -->
-                <h4 class="" id="references">References <br><small class="text-muted">(Please provide four references other than relatives or previous employers.)</small></h4>
+                <h4 class="" id="references">References <br><small class="font-weight-light">(Please provide four references other than relatives or previous employers.)</small></h4>
                 <div class="panel-body">
                     <div class="row clearfix">
                         <div class="col-md-12 column">
@@ -1070,7 +1094,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-5 mb-3 pt-3">
-                                                <span>Which Branch?<small class="text-muted">(Select all that apply.)</small></span>
+                                                <span>Which Branch?<small class="font-weight-light">(Select all that apply.)</small></span>
                                                 <div class="form-group">
                                                     <div class="form-check">
                                                         <input class="test-checkbox" type="checkbox">

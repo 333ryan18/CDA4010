@@ -21,3 +21,33 @@ nav {
 
 .white, .white::-webkit-input-placeholder {
   color: #f8f9fa !important; }
+
+.blue_background {
+  background-color: #007bff !important; }
+
+.red_background {
+  background-color: #dc3545 !important; }
+
+.green_background {
+  background-color: #28a745 !important; }
+
+.yellow_background {
+  background-color: #ffc107 !important; }
+
+.white_background {
+  background-color: #f8f9fa !important; }
+
+.black_background {
+  background-color: #000000 !important; }
+
+.x-small, .x-small::-webkit-input-placeholder {
+  font-size: 95% !important; }
+
+.small, .small::-webkit-input-placeholder {
+  font-size: 97% !important; }
+
+.medium, .medium::-webkit-input-placeholder {
+  font-size: 1rem !important; }
+
+.large, .large::-webkit-input-placeholder {
+  font-size: 101% !important; }
