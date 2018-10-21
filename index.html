@@ -37,43 +37,44 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#contactInfo">
-                                    Contact Information
+                                    Contact Information<i onclick='responsiveVoice.speak("Contact Information");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#emergencyContact">
                                     <span data-feather="file"></span>
-                                    Emergency Contact
+                                    Emergency Contact<i onclick='responsiveVoice.speak("Emergency Contact");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
+                        <div class="test"></div>
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#employmentInfo">
                                     <span data-feather="shopping-cart"></span>
-                                    Employment Information
+                                    Employment Information<i onclick='responsiveVoice.speak("Employment Information");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#criminalBackground">
                                     <span data-feather="shopping-cart"></span>
-                                    Criminal Background
+                                    Criminal Background<i onclick='responsiveVoice.speak("Criminal Background");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#references">
                                     <span data-feather="shopping-cart"></span>
-                                    References
+                                    References<i onclick='responsiveVoice.speak("References");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#educationBackground">
                                     <span data-feather="shopping-cart"></span>
-                                    Educational Background
+                                    Educational Background<i onclick='responsiveVoice.speak("Educational Background");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark edit" href="#miscellaneous">
                                     <span data-feather="shopping-cart"></span>
-                                    Miscellaneous
+                                    Miscellaneous<i onclick='responsiveVoice.speak("Miscellaneous");' class="fas fa-volume-up ml-2 invisible audio"></i>
                                 </a>
                         </li>
                     </ul>
@@ -91,42 +92,56 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label for="text_color">Text Color</label>
-                                        <select class="custom-select d-block w-100" id="text_color" required>
-                                            <option value="Default">Default</option>
-                                            <option value="Blue">Blue</option>
-                                            <option value="Red">Red</option>
-                                            <option value="Green">Green</option>
-                                            <option value="Yellow">Yellow</option>
-                                            <option value="White">White</option>
-                                        </select>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label for="text_color">Text Color</label>
+                                            <select class="custom-select d-block w-100" id="text_color" required>
+                                                <option value="Default">Default</option>
+                                                <option value="Blue">Blue</option>
+                                                <option value="Red">Red</option>
+                                                <option value="Green">Green</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="White">White</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="background_color">Background Color</label>
+                                            <select class="custom-select d-block w-100" id="background_color" required>
+                                                <option value="Default">Default</option>
+                                                <option value="Blue">Blue</option>
+                                                <option value="Red">Red</option>
+                                                <option value="Green">Green</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Black">Black</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <label for="background_color">Background Color</label>
-                                        <select class="custom-select d-block w-100" id="background_color" required>
-                                            <option value="Default">Default</option>
-                                            <option value="Blue">Blue</option>
-                                            <option value="Red">Red</option>
-                                            <option value="Green">Green</option>
-                                            <option value="Yellow">Yellow</option>
-                                            <option value="Black">Black</option>
-                                        </select>
+                                    <div class="row mb-3 mt-3">
+                                        <div class="col-lg-6">
+                                            <label for="font_size">Text Size</label>
+                                            <select class="custom-select d-block w-100" id="font_size" required>
+                                                <option value="Default">Default</option>
+                                                <option value="Extra Small">Extra Small</option>
+                                                <option value="Small">Small</option>
+                                                <option value="Medium">Medium</option>
+                                                <option value="Large">Large</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 mt-1">
+                                            <span class="pr-3">Need audio help?</span>
+                                            <br>
+                                            <div class="form-check form-check-inline mt-3">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="audioYes" value="audioYes">
+                                                <label class="form-check-label" for="audioYes">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="audioNo" value="audioNo" checked>
+                                                <label class="form-check-label" for="audioNo">No</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row mb-3 mt-3">
-                                    <div class="col-lg-6">
-                                        <label for="font_size">Text Size</label>
-                                        <select class="custom-select d-block w-100" id="font_size" required>
-                                            <option value="Default">Default</option>
-                                            <option value="Extra Small">Extra Small</option>
-                                            <option value="Small">Small</option>
-                                            <option value="Medium">Medium</option>
-                                            <option value="Large">Large</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -141,48 +156,48 @@
                 <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <label for="lastName">Last name</label>
+                            <label for="lastName">Last name</label><i onclick='responsiveVoice.speak("Last Name");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required>
                             <div class="invalid-feedback">
                                 Valid last name is required.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="firstName">First name</label>
+                            <label for="firstName">First name</label><i onclick='responsiveVoice.speak("First Name");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="middleName">Middle name</label>
+                            <label for="middleName">Middle name</label><i onclick='responsiveVoice.speak("Middle Name");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="text" class="form-control" id="middleName" placeholder="Middle Name" value="" required>
                             <div class="invalid-feedback">
-                                Valid last name is required.
+                                Valid middle name is required.
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="email">Email</label>
+                        <label for="email">Email</label><i onclick='responsiveVoice.speak("Email");' class="fas fa-volume-up ml-2 invisible audio"></i>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                         <div class="invalid-feedback">
                             Please enter a valid email address.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="address">Address</label>
+                        <label for="address">Address</label><i onclick='responsiveVoice.speak("Address");' class="fas fa-volume-up ml-2 invisible audio"></i>
                         <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                         <div class="invalid-feedback">
                             Please enter your address.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="address2">Address 2 <span class="font-weight-light">(Optional)</span></label>
+                        <label for="address2">Address 2 <span class="font-weight-light">(Optional)</span></label><i onclick='responsiveVoice.speak("Address 2 Optional");' class="fas fa-volume-up ml-2 invisible audio"></i>
                         <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="state">State</label>
+                            <label for="state">State</label><i onclick='responsiveVoice.speak("State");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <select class="custom-select d-block w-100" id="state" required>
                                 <option value="">Choose...</option>
                                 <option value="AL">Alabama</option>
@@ -242,14 +257,14 @@
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="city">City</label>
+                            <label for="city">City</label><i onclick='responsiveVoice.speak("City");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="text" class="form-control" id="zip" placeholder="City" required>
                             <div class="invalid-feedback">
                                 City required.
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
-                            <label for="zip">Zip</label>
+                            <label for="zip">Zipcode</label><i onclick='responsiveVoice.speak("Zipcode");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
                             <div class="invalid-feedback">
                                 Zip code required.
@@ -258,7 +273,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="yearsLived">How long have you lived at your current address?</label>
+                            <label for="yearsLived">How long have you lived at your current address?</label><i onclick='responsiveVoice.speak("How long have you lived at your current address?");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <select class="custom-select d-block w-100" id="yearsLived" required>
                                 <option value="">Year(s)...</option>
                                 <option value="y0">0</option>
@@ -299,14 +314,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="zip">Telephone Number</label>
+                            <label for="zip">Telephone Number</label><i onclick='responsiveVoice.speak("Telephone Number");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="number" class="form-control" id="phone" placeholder="9041234567" required>
                             <div class="invalid-feedback">
                                 Phone number required.
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="zip">Mobile Number</label>
+                            <label for="zip">Mobile Number</label><i onclick='responsiveVoice.speak("Mobile Number");' class="fas fa-volume-up ml-2 invisible audio"></i>
                             <input type="number" class="form-control" id="mobile" placeholder="9041234567" required>
                             <div class="invalid-feedback">
                                 Phone number required.
@@ -349,7 +364,7 @@
                 <!-- End Contact Information Section -->
                 <!-- Start Emergency Contact Section -->
                 <form class="needs-validation" novalidate>
-                    <h4 class="" id="emergencyContact">Emergency Contact <h6 class="font-weight-light">(Will be contacted in case of an emergency.)</h6></h4>
+                    <h4 id="emergencyContact">Emergency Contact<h6 class="font-weight-light">(Will be contacted in case of an emergency.)</h6></h4>
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label for="lastName">Last name</label>
@@ -1152,6 +1167,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <script src="js/main-dist.js"></script>
     <script src="js/valid-dist.js"></script>
 </body>

@@ -1,3 +1,4 @@
+// Referneces Table
 $(document).ready(function() {
     var i = 4;
     $("#add_row_ref").click(function() {
@@ -15,6 +16,7 @@ $(document).ready(function() {
 
 });
 
+// Criminal Background Table
 $(document).ready(function() {
     var x = 1;
     $("#add_row_criminal").click(function() {
@@ -32,6 +34,7 @@ $(document).ready(function() {
 
 });
 
+// Educational Background Table
 $(document).ready(function() {
     var j = 1;
     $("#add_row_education").click(function() {
@@ -49,6 +52,7 @@ $(document).ready(function() {
 
 });
 
+// Text Color
 $("#text_color").change(function() {
     var color = $(this).val();
     switch (color) {
@@ -75,7 +79,7 @@ $("#text_color").change(function() {
     }
 });
 
-
+// Background Color
 $("#background_color").change(function() {
     var color = $(this).val();
     switch (color) {
@@ -104,6 +108,7 @@ $("#background_color").change(function() {
     }
 });
 
+// Font Size
 $("#font_size").change(function() {
     var size = $(this).val();
     switch (size) {
@@ -128,6 +133,8 @@ $("#font_size").change(function() {
 });
 
 
+
+// Required Fields Check on Submit
 (function() {
     'use strict';
     window.addEventListener('load', function() {
@@ -145,3 +152,14 @@ $("#font_size").change(function() {
         });
     }, false);
 })();
+
+// Audio Settings
+$(document).ready(function() {
+    $("#audioYes").on("click", function() {
+        $(".audio").addClass("visible").removeClass("invisible");
+    })
+    $("#audioNo").on("click", function() {
+        $(".audio").addClass("invisible").removeClass("visible");
+    })
+
+});
