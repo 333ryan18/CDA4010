@@ -157,9 +157,13 @@ $("#font_size").change(function() {
 $(document).ready(function() {
     $("#audioYes").on("click", function() {
         $(".audio").addClass("visible").removeClass("invisible");
+        $(".audio-html-add").html("<i onmouseover='responsiveVoice.speak(\"Add Row\");' class='fas fa-volume-up ml-2 audio audio-added'></i>");
+        $(".audio-html-delete").html("<i onmouseover='responsiveVoice.speak(\"Delete Row\");' class='fas fa-volume-up ml-2 audio audio-added'></i>");
+        $(".audio-html-submit").html("<i onmouseover='responsiveVoice.speak(\"Submit\");' class='fas fa-volume-up ml-2 audio audio-added'></i>");
     })
     $("#audioNo").on("click", function() {
         $(".audio").addClass("invisible").removeClass("visible");
+        $("i.audio-added").remove();
     })
 
 });
