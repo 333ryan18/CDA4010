@@ -166,4 +166,17 @@ $(document).ready(function() {
         $("i.audio-added").remove();
     })
 
+
+});
+
+// Keyboard Shortcuts
+Mousetrap.bind('alt+h', function(e) {
+  $('#exampleModal').modal('show');
+});
+
+// When the user clicks on the button, scroll to the top of the document
+$(document).ready(function(){
+    $('#back-to-top').click(function () {
+        $('#back-to-top').tooltip('hide');
+    });
 });

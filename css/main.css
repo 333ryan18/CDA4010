@@ -51,3 +51,9 @@ nav {
 
 .large, .large::-webkit-input-placeholder {
   font-size: 101% !important; }
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px; }
