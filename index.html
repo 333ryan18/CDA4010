@@ -521,7 +521,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">$</span>
                                 </div>
-                                <input type="number" class="form-control" placeholder="50000" required>
+                                <input type="number" class="form-control" min="0" placeholder="50000" required>
                                 <div class="invalid-feedback">
                                     Please insert a vaild salary amount.
                                 </div>
@@ -563,7 +563,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="hoursPerWeek">How many hours a week can you work?</label><i onmouseover='responsiveVoice.speak("How many hours a week can you work?");' class="fas fa-volume-up ml-2 invisible audio"></i>
-                            <input type="number" class="form-control" placeholder="40" required>
+                            <input type="number" class="form-control" min="0" placeholder="40" required>
                             <div class="invalid-feedback">
                                 Hours per week required.
                             </div>
@@ -706,8 +706,8 @@
                                                                     </select>
                                                                 </td>
                                                                 <td>
-                                                                    <input type="number" class="form-control" placeholder="Year(s)" name="punishmentyrs0" required>
-                                                                    <input type="number" class="form-control" placeholder="Month(s)" name="punishmentmth0" required>
+                                                                    <input type="number" min="0" class="form-control mb-2" placeholder="Year(s)" name="punishmentyrs0" required>
+                                                                    <input type="number" min="0" class="form-control" placeholder="Month(s)" name="punishmentmth0" required>
                                                                 </td>
                                                             </tr>
                                                             <tr id='criminal1'></tr>
@@ -990,7 +990,7 @@
                                                                 <input type="text" class="form-control" placeholder="School Name" name="schoolName0" required>
                                                             </td>
                                                             <td>
-                                                                <select class="custom-select d-block w-100" name="state0" required>
+                                                                <select class="custom-select d-block w-100 mb-2" name="state0" required>
                                                                     <option value="">State...</option>
                                                                     <option value="AL">Alabama</option>
                                                                     <option value="AK">Alaska</option>
@@ -1204,11 +1204,11 @@
                                             </td>
                                             <td>
                                                 <div class="mb-3">
-                                                    <input type="number" class="form-control mb-2" placeholder="Year(s)" name="punishmentyrs0" required>
+                                                    <input type="number"  min="0" class="form-control mb-2" placeholder="Year(s)" name="workyrs0" required>
                                                     <div class="invalid-feedback">
                                                         Years Required.
                                                     </div>
-                                                    <input type="number" class="form-control" placeholder="Month(s)" name="punishmentmth0" required>
+                                                    <input type="number"  min="0" class="form-control" placeholder="Month(s)" name="workmth0" required>
                                                     <div class="invalid-feedback">
                                                         Months Required.
                                                     </div>
