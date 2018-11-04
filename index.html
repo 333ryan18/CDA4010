@@ -1207,11 +1207,11 @@
                                             </td>
                                             <td>
                                                 <div class="mb-3">
-                                                    <input type="number"  min="0" class="form-control mb-2" placeholder="Year(s)" name="workyrs0" required>
+                                                    <input type="number" min="0" class="form-control mb-2" placeholder="Year(s)" name="workyrs0" required>
                                                     <div class="invalid-feedback">
                                                         Years Required.
                                                     </div>
-                                                    <input type="number"  min="0" class="form-control" placeholder="Month(s)" name="workmth0" required>
+                                                    <input type="number" min="0" class="form-control" placeholder="Month(s)" name="workmth0" required>
                                                     <div class="invalid-feedback">
                                                         Months Required.
                                                     </div>
@@ -1321,7 +1321,16 @@
                     <hr class="mb-4">
                 </form>
                 <!-- End Mis Background Section -->
-                <button type="submit" class="btn btn-primary left mt-3 float-right" id="checkBtn">Submit<span class="audio-html-submit"></span></button>
+                <div class="row">
+                    <div class="col-lg-9">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="g-recaptcha float-right" data-sitekey="6Lc2qXgUAAAAAE4Y960pdb803kO031Oq4LHdXIND"></div>
+                        <button type="submit" class="btn btn-primary mt-3 float-right" id="checkBtn">Submit<span class="audio-html-submit"></span></button>
+                    </div>
+                </div>
+                <!--                 <div class="g-recaptcha float-right" data-sitekey="6Lc2qXgUAAAAAE4Y960pdb803kO031Oq4LHdXIND"></div><br>
+                <button type="submit" class="btn btn-primary mt-3 float-right" id="checkBtn">Submit<span class="audio-html-submit"></span></button> -->
             </div>
             <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return to the top" data-toggle="tooltip" data-placement="right"><i class="fas fa-arrow-up"></i></a>
         </div>
@@ -1334,7 +1343,7 @@
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
     <script src="js/main-dist.js"></script>
-    <script src="js/valid-dist.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>
