@@ -22,7 +22,7 @@ $(document).ready(function() {
     $("#add_row_criminal").click(function() {
         $('#criminal' + x).html("<td>" + (x + 1) + "</td><td><input name='date" + x + "' type='date' placeholder='Date' class='form-control' required/> </td><td><select class='custom-select d-block w-100' name='type" + x + "' required><option value=''>Choose...</option><option value='Misdemeanor'>Misdemeanor</option><option value='Felony'>Felony</option></select></td><td><input type='text' name='description" + x + "' placeholder='Description' class='form-control' required/></td><td><select class='custom-select d-block w-100' name='punishment" + x + "'required><option value=''>Choose...</option><option value='Confinement'>Confinement</option><option value='Probation'>Probation</option><option value='Probation'>Community Service</option><option value='Felony'>Felony</option></select></td><td><input type='number' class='form-control mb-2' id='Years' min='0' placeholder='Year(s)' name='punishmentyrs" + x + "' required><input type='number' min='0' class='form-control' id='Months' placeholder='Month(s)' name='punishmentmth" + x + "' required></td>");
 
-        $('#tab_logic').append('<tr id="criminal' + (x + 1) + '"></tr>');
+        $('#tab_logic_criminal').append('<tr id="criminal' + (x + 1) + '"></tr>');
         x++;
     });
     $("#delete_row_criminal").click(function() {
@@ -47,6 +47,25 @@ $(document).ready(function() {
         if (j > 1) {
             $("#education" + (j - 1)).html('');
             j--;
+        }
+    });
+
+});
+
+// Work Experinece Table
+$(document).ready(function() {
+    var z = 1;
+    $("#add_row_work").click(function() {
+        console.log(z);
+        $('#work' + z).html("<td>" + (z + 1) + "</td><td><div class='col-xs-6 mb-3'><input type='text' class='form-control' id='lastName0' placeholder='Job Title' name='job_title" + z + "' required><div class='invalid-feedback'>Job Title Required.</div></div></td><td><input type='text' name='emp_name0' placeholder='Employer Name' class='form-control' required /><div class='invalid-feedback'>Employer Name required.</div></td><td><input type='text' name='emp_email0' placeholder='person@example.com' class='form-control' required /><div class='invalid-feedback'>Email required.</div></td><td><input type='text' name='emp_phone0' placeholder='9041234567' class='form-control' required /><div class='invalid-feedback'>Phone number required.</div></td><td><input type='number' name='refPhone" + z + "' class='form-control' placeholder='1234 Main St' required><div class='invalid-feedback'>Address required.</div></td><td><div class='mb-3'><input type='email' class='form-control mb-2' placeholder='City' name='emp_city" + z + "'><select class='custom-select d-block w-100 mb-2' required><option value=''>Select State...</option><option value='AL'>Alabama</option><option value='AK'>Alaska</option><option value='AZ'>Arizona</option><option value='AR'>Arkansas</option><option value='CA'>California</option><option value='CO'>Colorado</option><option value='CT'>Connecticut</option><option value='DE'>Delaware</option><option value='DC'>District Of Columbia</option><option value='FL'>Florida</option><option value='GA'>Georgia</option><option value='HI'>Hawaii</option><option value='ID'>Idaho</option><option value='IL'>Illinois</option><option value='IN'>Indiana</option><option value='IA'>Iowa</option><option value='KS'>Kansas</option><option value='KY'>Kentucky</option><option value='LA'>Louisiana</option><option value='ME'>Maine</option><option value='MD'>Maryland</option><option value='MA'>Massachusetts</option><option value='MI'>Michigan</option><option value='MN'>Minnesota</option><option value='MS'>Mississippi</option><option value='MO'>Missouri</option><option value='MT'>Montana</option><option value='NE'>Nebraska</option><option value='NV'>Nevada</option><option value='NH'>New Hampshire</option><option value='NJ'>New Jersey</option><option value='NM'>New Mexico</option><option value='NY'>New York</option><option value='NC'>North Carolina</option><option value='ND'>North Dakota</option><option value='OH'>Ohio</option><option value='OK'>Oklahoma</option><option value='OR'>Oregon</option><option value='PA'>Pennsylvania</option><option value='RI'>Rhode Island</option><option value='SC'>South Carolina</option><option value='SD'>South Dakota</option><option value='TN'>Tennessee</option><option value='TX'>Texas</option><option value='UT'>Utah</option><option value='VT'>Vermont</option><option value='VA'>Virginia</option><option value='WA'>Washington</option><option value='WV'>West Virginia</option><option value='WI'>Wisconsin</option><option value='WY'>Wyoming</option></select><div class='invalid-feedback'>State required.</div><input type='email' class='form-control mb-2' placeholder='Zipcode' name='emp_city" + z + "' required><div class='invalid-feedback'>Please enter a city.</div></div></td><td><div class='mb-3'><input type='number' min='0' class='form-control mb-2' placeholder='Year(s)' name='workyrs0' required><div class='invalid-feedback'>Years Required.</div><input type='number' min='0' class='form-control' placeholder='Month(s)' name='workmth" + z + "' required><div class='invalid-feedback'>Months Required.</div></div></td>");
+
+        $('#tab_logic_work').append('<tr id="work' + (z + 1) + '"></tr>');
+        z++;
+    });
+    $("#delete_row_work").click(function() {
+        if (z > 1) {
+            $("#work" + (z - 1)).html('');
+            z--;
         }
     });
 
