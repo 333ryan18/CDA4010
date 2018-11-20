@@ -686,6 +686,9 @@
                                                                 </td>
                                                                 <td>
                                                                     <input type="date" name='date0' class="form-control" required />
+                                                                    <div class='invalid-feedback'>
+                                                                        Please provide a valid date.
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <select class="custom-select d-block w-100" name='type0' required>
@@ -693,9 +696,15 @@
                                                                         <option value="Misdemeanor">Misdemeanor</option>
                                                                         <option value="Felony">Felony</option>
                                                                     </select>
+                                                                    <div class='invalid-feedback'>
+                                                                        Please select a type of crime.
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <input type="text" name='description0' placeholder='Description' class="form-control" required />
+                                                                    <div class='invalid-feedback'>
+                                                                        Please provide a description of the crime.
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <select class="custom-select d-block w-100" name='punishment0' required>
@@ -704,10 +713,19 @@
                                                                         <option value="Probation">Probation</option>
                                                                         <option value="Probation">Community Service</option>
                                                                     </select>
+                                                                    <div class='invalid-feedback'>
+                                                                        Please provide a form of punishment.
+                                                                    </div>
                                                                 </td>
                                                                 <td>
                                                                     <input type="number" min="0" class="form-control mb-2" placeholder="Year(s)" name="punishmentyrs0" required>
+                                                                    <div class='invalid-feedback'>
+                                                                        Please provide time in year(s).
+                                                                    </div>
                                                                     <input type="number" min="0" class="form-control" placeholder="Month(s)" name="punishmentmth0" required>
+                                                                    <div class='invalid-feedback'>
+                                                                        Please provide time in month(s).
+                                                                    </div>
                                                                 </td>
                                                             </tr>
                                                             <tr id='criminal1'></tr>
@@ -781,12 +799,15 @@
                                             </td>
                                             <td>
                                                 <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid title.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid company.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide an address.</div>
                                             </td>
                                             <td>
                                                 <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
@@ -796,7 +817,7 @@
                                             </td>
                                             <td>
                                                 <div class="mb-3">
-                                                    <input type="email" class="form-control" placeholder="person@example.com" name='refEmail0'>
+                                                    <input type="email" class="form-control" placeholder="person@example.com" name='refEmail0' required>
                                                     <div class="invalid-feedback">
                                                         Please enter a valid email address.
                                                     </div>
@@ -823,12 +844,15 @@
                                             </td>
                                             <td>
                                                 <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid title.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid company.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide an address.</div>
                                             </td>
                                             <td>
                                                 <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
@@ -865,12 +889,15 @@
                                             </td>
                                             <td>
                                                 <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid title.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid company.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide an address.</div>
                                             </td>
                                             <td>
                                                 <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
@@ -907,12 +934,15 @@
                                             </td>
                                             <td>
                                                 <input type='text" name=' title0' placeholder='Title' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid title.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='company0' placeholder='Company' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide a valid company.</div>
                                             </td>
                                             <td>
                                                 <input type='text' name='address0' placeholder='Address' class='form-control' required />
+                                                <div class='invalid-feedback'>Please provide an address.</div>
                                             </td>
                                             <td>
                                                 <input type="number" name='refPhone0' class="form-control" id="phone" placeholder="9041234567" required>
@@ -985,9 +1015,11 @@
                                                                     <option value="postGraduate">Post-Graduate</option>
                                                                     <option value="professional">Professional</option>
                                                                 </select>
+                                                                <div class='invalid-feedback'>Please select a school type.</div>
                                                             </td>
                                                             <td>
                                                                 <input type="text" class="form-control" placeholder="School Name" name="schoolName0" required>
+                                                                <div class='invalid-feedback'>Please provide a school name.</div>
                                                             </td>
                                                             <td>
                                                                 <select class="custom-select d-block w-100 mb-2" name="state0" required>
@@ -1044,10 +1076,13 @@
                                                                     <option value="WI">Wisconsin</option>
                                                                     <option value="WY">Wyoming</option>
                                                                 </select>
+                                                                <div class='invalid-feedback'>Please select a state.</div>
                                                                 <input type="text" name='city0' placeholder='City' class="form-control" required />
+                                                                <div class='invalid-feedback'>Please provide a city.</div>
                                                             </td>
                                                             <td>
                                                                 <input type="text" class="form-control" placeholder="Accomplishment" name="accomplishment0" required>
+                                                                <div class='invalid-feedback'>Please provide an accomplishment</div>
                                                             </td>
                                                         </tr>
                                                         <tr id='education1'></tr>
@@ -1141,7 +1176,10 @@
                                             </td>
                                             <td>
                                                 <div class="mb-3">
-                                                    <input type="email" class="form-control mb-2" placeholder="City" name='emp_city0' required="">
+                                                    <input type="text" class="form-control mb-2" placeholder="City" name='emp_city0' required>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a city.
+                                                    </div>
                                                     <select class="custom-select d-block w-100 mb-2" required>
                                                         <option value="">Select State...</option>
                                                         <option value="AL">Alabama</option>
@@ -1199,7 +1237,7 @@
                                                     <div class="invalid-feedback">
                                                         State required.
                                                     </div>
-                                                    <input type="email" class="form-control mb-2" placeholder="Zipcode" name='emp_city0'>
+                                                    <input type="email" class="form-control mb-2" placeholder="Zipcode" name='emp_city0' required>
                                                     <div class="invalid-feedback">
                                                         Please enter a valid zip code.
                                                     </div>
